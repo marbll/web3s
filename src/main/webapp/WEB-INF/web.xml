@@ -35,4 +35,32 @@
     <url-pattern>*.xhtml</url-pattern>
   </servlet-mapping>
 
+
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>/icefaces/*</url-pattern>
+  </servlet-mapping>
+
+
+
+  <!-- More efficient, in an AJAX environment, to have server side state saving -->
+  <context-param>
+    <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+    <param-value>server</param-value>
+  </context-param>
+
+  <!-- HTML comments become components unless they're stripped -->
+  <context-param>
+    <param-name>javax.faces.FACELETS_SKIP_COMMENTS</param-name>
+    <param-value>true</param-value>
+  </context-param>
+
+
+
+
+
+
+
+
+
 </web-app>
