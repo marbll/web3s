@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="org.glassfish:javax.faces:2.4.0" type="repository">
+    <properties maven-id="org.glassfish:javax.faces:2.4.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/javax.faces/2.4.0/javax.faces-2.4.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/el/javax.el-api/3.0.1-b04/javax.el-api-3.0.1-b04.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/javax.el/3.0.1-b04/javax.el-3.0.1-b04.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

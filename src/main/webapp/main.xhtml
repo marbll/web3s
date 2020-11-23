@@ -76,15 +76,18 @@
                 <h:form method="post" id="form">
                     <h3>Выберите X:</h3>
                     <h:panelGroup styleClass="wrapperX">
-                        <ace:sliderEntry styleClass="slider" length="150px" showLabels="true" min="-3" max="3"/>
+                        <ace:sliderEntry styleClass="slider" length="200px" showLabels="true" min="-3" max="3" stepPercent="8.3" value="#{mainBean.x}"/>
+                        <h:outputText value="#{mainBean.x}"/>
                     </h:panelGroup>
                     <h3>Выберите Y:</h3>
                     <h:panelGroup id="wrapperY">
-                        <h:inputText styleClass="inputY" id="inputY"/>
+                        <h:inputText styleClass="inputY" id="inputY" value="#{mainBean.y}"/>
+                        <p>Y: #{mainBean.y}</p>
                     </h:panelGroup>
                     <h3>Выберите R:</h3>
                     <h:panelGroup id="wrapperR">
-                        <ace:sliderEntry styleClass="slider" length="150px" showLabels="true" min="1" max="4"/>
+                        <ace:sliderEntry styleClass="slider" length="200px" showLabels="true" min="1" max="4" value="#{mainBean.r}"/>
+                        <h:outputText value="#{mainBean.r}"/>
                     </h:panelGroup>
                     <h:panelGroup layout="block" styleClass="sendClearWrapper">
                         <h:button class="commandButtons" value="Отправить"/>

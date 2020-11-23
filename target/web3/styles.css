@@ -1,0 +1,154 @@
+body{
+    background: url("img/fon5.jpg");
+    background-size: cover;
+}
+
+header {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, #b89f79, #3b2b14);
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header span {
+    color: #f0e8dd;
+    font-family: "Comic Sans MS";
+    font-size: 1.3em;
+    margin: 15px;
+}
+
+#linkWrapper{
+    position: relative;
+    width: 66vw;
+    left: 17vw;
+    top: 55vh;
+    margin-left: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#linkWrapper img{
+    position: relative;
+    width: 16vw;
+}
+
+.mirrorX{
+    transform: scale(-1, 1);
+}
+
+#kotik {
+    position: relative;
+    width: 16vw;
+    top: 57vh;
+    right: 1vh;
+}
+
+#clockWrapper {
+    position: absolute;
+    left: 50vw;
+    top: 35vh;
+    margin-left: -550px;
+    margin-top: -175px;
+    width: 1100px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.timeSheet{
+    position: relative;
+    width: 150px;
+    height: 300px;
+    background: linear-gradient(to bottom right, white, #b89f79);
+
+    /*border-image: linear-gradient(to top left, #b89f79, white);*/
+    border-radius: 30px;
+}
+.timeSheet::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(to top left, #b89f79, white);
+    border-radius: 34px;
+    z-index: -1;
+}
+.colon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    width: 70px;
+}
+.colon div{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #3b2b14;
+    margin: 50px;
+}
+.timeSheet p{
+    position: absolute;
+    margin: 0;
+    margin-left: 8px;
+    top: 150px;
+    transform: translate(0, -162px);
+    font-size: 14em;
+    color: #3b2b14;
+    font-family: "Comic Sans MS";
+}
+
+.rotating {
+    animation: 2.1s rotate;
+    transform-origin: 0 0;
+}
+.rotateBack{
+    animation: 2.1s rotateBack;
+    transform-origin: 0 0;
+}
+@keyframes rotate {
+    0% {
+        transform:rotateX(0deg);
+    }
+    100% {
+        transform:rotateX(90deg);
+    }
+}
+@keyframes rotateBack {
+    0% {
+        transform:rotateX(90deg);
+    }
+    100% {
+        transform:rotateX(0deg);
+    }
+}
+#dateWrapper {
+    background: linear-gradient(to bottom right, #f0e8dd, #b89f79);
+    width: 450px;
+    height: 80px;
+    position: relative;
+    left: 50vw;
+    margin-left: -235px;
+    top: 60vh;
+    border-radius: 7px;
+}
+#dateWrapper p{
+    color: rgba(59, 43, 20, 0.7);
+    font-family: "Comic Sans MS";
+    font-size: 3.2em;
+    text-align: center;
+}
+
+#link{
+    color: #3b2b14;
+    font-family: "Comic Sans MS";
+    font-size: 1.1em;
+    font-weight: 900;
+}

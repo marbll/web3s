@@ -126,6 +126,7 @@ body{
     position: relative;
     left: 50%;
     margin-left: -125px;
+    margin-top: 18px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -155,23 +156,20 @@ body{
     height: 30px;
     border-radius: 7px;
     border: 3px solid rgb(125, 75, 29);
-    background-color: rgba(250, 92, 111, 0.3);
+    /*background-color: rgba(250, 92, 111, 0.3);*/
     color: rgb(125, 75, 29);
     font-family: "Comic Sans MS";
     font-size: 1.1em;
     font-weight: 800;
     outline: none;
 }
-.inputY::placeholder {
-    font-family: "Comic Sans MS";
-    color: rgb(177, 227, 221);
-}
 .slider {
     font-family: "Comic Sans MS";
     font-size: 1.1em;
     color: palevioletred;
-    width: 184px;
+    width: 232px;
     position: relative;
     left: 50%;
-    margin-left: -92px;
+    margin-left: -116px;
+    line-height: 17px;
 }

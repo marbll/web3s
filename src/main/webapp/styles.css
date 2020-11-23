@@ -145,3 +145,10 @@ header span {
     font-size: 3.2em;
     text-align: center;
 }
+
+#link{
+    color: #3b2b14;
+    font-family: "Comic Sans MS";
+    font-size: 1.1em;
+    font-weight: 900;
+}
